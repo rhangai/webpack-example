@@ -1,21 +1,20 @@
 <template>
 	<div class="test">
-		{{x}}
-		<Hello />
-		<Hello />
+		<router-view />
 	</div>
 </template>
 <style lang="scss">
 .test { color: #f00; }
 </style>
 <script>
-	import Hello from './components/Hello.vue';
+	import VueRouter from 'vue-router';
+	import routes from './Routes';
+	const router = new VueRouter({ routes });
+	
 	export default {
+		router,
 		data() {
 			return { x: 10 }
-		},
-		components: {
-			Hello
 		}
 	};
 </script>

@@ -1,12 +1,9 @@
+import "./index.scss";
 import App from './App.vue';
 import Vue from 'vue';
-import "./index.scss";
 
-new Vue({
+const AppElement = Vue.extend( App );
+new AppElement({
 	el: "#app",
-	template: "<App />",
-	components: {
-		App
-	}
 });
 

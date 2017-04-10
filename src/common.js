@@ -5,5 +5,5 @@ Vue.use( VueRouter );
 import 'expose-loader?$!jquery';
 import 'expose-loader?jQuery!jquery';
 
-import "foundation/js/foundation";
-import "foundation/scss/foundation.scss";
+import "foundation-sites/dist/js/foundation";
+import "foundation-sites/dist/css/foundation.css";

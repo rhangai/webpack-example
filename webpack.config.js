@@ -63,6 +63,7 @@ module.exports = {
 		new ExtractTextPlugin( "[name].css" ),
 	],
 	resolve: {
+		extensions: [ ".webpack.js", ".web.js", ".js", ".json", ".vue" ],
 		alias: {
 			'vue$': 'vue/dist/vue.common.js'
 		}

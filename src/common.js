@@ -1,4 +1,6 @@
-import "vue";
+import Vue from "vue";
+import VueRouter from 'vue-router';
+Vue.use( VueRouter );
 
 import 'expose-loader?$!jquery';
 import 'expose-loader?jQuery!jquery';

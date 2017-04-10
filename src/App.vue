@@ -5,7 +5,7 @@
 		<Hello />
 	</div>
 </template>
-<style lang="sass">
+<style lang="scss">
 .test { color: #f00; }
 </style>
 <script>

@@ -54,7 +54,8 @@ module.exports = {
 		alias: {
 			'vue$': 'vue/dist/vue.common.js'
 		}
-	}
+	},
+	devtool: "cheap-module-eval-source-map",
 };
 
 // Minifica
@@ -75,4 +76,5 @@ if (process.env.NODE_ENV === 'production') {
 			minimize: true
 		})
 	])
+	module.exports.devtool = false;
 }

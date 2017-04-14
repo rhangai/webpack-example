@@ -1,10 +1,9 @@
 <template>
-	<div class="test">
+	<div>
 		<router-view />
 	</div>
 </template>
 <style lang="scss">
-.test { color: #f00; }
 </style>
 <script>
 	import VueRouter from 'vue-router';

@@ -31,20 +31,12 @@ module.exports = function( gulp, config, options ) {
 					disableHostCheck: true,
 				};
 				const compiler = webpack( webpackConfig );
-				compiler.run( function( err, stats ) {
-					if ( stats ) {
-						gutil.log(stats.toString({
-							colors: gutil.colors.supportsColor
-						}));
-					}
-					const server = new webpackDevServer( compiler, devServerOptions );
-					const port = getPort( options.server );
-					server.listen( port );
-				} );
+				const server = new webpackDevServer( compiler, devServerOptions );
+				const port = getPort( options.server );
+				server.listen( port );
+				done();
 
 			}, 0 );
-			
-			done();
 			return;
 		}
 

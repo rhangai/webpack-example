@@ -36,7 +36,8 @@ module.exports = function( gulp, config, options ) {
 			}),
 			new webpack.optimize.CommonsChunkPlugin( { name: 'common' } ),
 			new ExtractTextPlugin( "[name].css" ),
-		],
+			webpack.optimize.ModuleConcatenationPlugin ? new webpack.optimize.ModuleConcatenationPlugin() : null,
+		].filter( Boolean ),
 
 		module: {
 			rules: [{

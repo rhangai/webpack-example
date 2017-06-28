@@ -100,7 +100,7 @@ module.exports = function( gulp, config, options ) {
 			},
 		},
 
-		devtool: "cheap-module-eval-source-map",
+		devtool: "inline-source-map",
 	};
 
 	// Production

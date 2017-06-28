@@ -1,0 +1,20 @@
+# Tmp files
+.\#*
+\#*
+*~
+
+# Vendor files
+node_modules/
+
+# Build
+/build
+
+# Database
+database/flyway.conf
+
+# Config
+config.js
+
+# Tern files
+.tern-port
+

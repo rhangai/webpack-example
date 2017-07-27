@@ -1,0 +1,25 @@
+{
+	$vars: {
+		database: {
+			host:      "localhost",
+			database:  "keeplives_test",
+			user:      "root",
+			password:  "root",
+		},
+	},
+	name: "keeplives",
+	
+	flyway: {
+		url:      "mysql://{{=it.database.host}}/{{=it.database.database}}",
+		user:     "{{=it.database.user}}",
+		password: "{{=it.database.password}}",
+	},
+	API: "/api/v1/",
+
+	// node server
+	node: {
+		listen: "/var/run/keeplives.sock",
+		listen_uid: 33,
+		listen_gid: 33,
+	},
+}

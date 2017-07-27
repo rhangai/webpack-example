@@ -1,0 +1,13 @@
+@import "~scss/variables.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	min-width: 320px;
+	color: $black;
+}
+
+

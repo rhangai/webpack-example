@@ -1,0 +1,13 @@
+{
+    "name": "!!! vue-foundation/example !!!!",
+    "type": "project",
+    "require": {
+        "renanhangai/libweb": "^1.6",
+        "hiroto-k/json5-php": "^1.0"
+    },
+	"autoload": {
+		"psr-4": {
+			"project\\": "src/"
+		}
+	}
+}

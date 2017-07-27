@@ -1,0 +1,11 @@
+@import "~scss/variables.scss";
+
+$foundation-palette: (
+	primary: $primary-color,
+	secondary: #767676,
+	success: #5cb85c,
+	warning: #f0ad4e,
+	alert: #d9534f,
+);
+$black: #212121;
+@import "~foundation-sites/scss/foundation.scss";
